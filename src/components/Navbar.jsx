@@ -100,18 +100,18 @@ const Navbar = () => {
                 <MenuOutlined />
             </div>
             <Drawer
-                title="Basic Drawer"
+                className='drawer'
                 placement={placement}
                 closable={true}
                 onClose={onClose}
                 open={open}
                 key={placement}
                 >
-                    <Menu selectedKeys={[current]} mode="inline" items={items} />
+                <Menu theme='dark' selectedKeys={[current]} mode="inline" items={items} />
             </Drawer>
         </div>
         <div className="desktop_menu">
-            <Menu className='navbar' onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />
+            <Menu theme='dark' className='navbar' onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />
         </div>
     </>
   )
